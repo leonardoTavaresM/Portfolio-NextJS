@@ -3,7 +3,6 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../libs/model'
 import { DogSpinner, DogContainer } from './voxel-dog-loader'
-// import { loadSTLModel } from '../libs/modelSTL'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -14,7 +13,6 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
 
-  // const urlDogGLB = '/samoyed-3d.glb'
   const urlDogGLB = '/Everything_is_Fine_Dog.glb'
 
   const handleWindowResize = useCallback(() => {
@@ -79,23 +77,10 @@ const VoxelDog = () => {
       directionalLight.shadow.camera.near = 1.5
       directionalLight.shadow.camera.far = 100
       scene.add(directionalLight)
-      // const shadowHelper = new THREE.CameraHelper(
-      //   directionalLight.shadow.camera,
-      // )
-      // scene.add(shadowHelper)
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
-
-      // Adiciona um plano como representação do chão
-      // const groundGeometry = new THREE.PlaneGeometry(200, 200)
-      // const groundMaterial = new THREE.ShadowMaterial({ opacity: 0.5 })
-      // const ground = new THREE.Mesh(groundGeometry, groundMaterial)
-      // ground.rotation.x = -Math.PI / 3
-      // ground.position.y = -5 // Posição ajustada para que o chão fique abaixo do modelo
-      // ground.receiveShadow = true // Habilita o chão para receber sombras
-      // scene.add(ground)
 
       loadGLTFModel(scene, urlDogGLB, {
         receiveShadow: true,
