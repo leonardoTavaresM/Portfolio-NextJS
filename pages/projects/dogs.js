@@ -30,10 +30,10 @@ const Work = () => {
           </ListItem>
         </List>
         <WorkImage
-          src="/images/projects/thumbSocialDogs.jpg"
+          src="/images/projects/thumb_social_dogs.jpg"
           alt="social Dog"
         />
-        <WorkImage src="/images/projects/socialDogs_02.jpg" alt="social Dog" />
+        <WorkImage src="/images/projects/social_dogs_02.jpg" alt="social Dog" />
       </Container>
     </Layout>
   )
