@@ -29,8 +29,11 @@ const Work = () => {
             <span>ReactJS, Css Modules </span>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/thumbSocialDogs.jpg" alt="social Dog" />
-        <WorkImage src="/images/works/socialDogs_02.jpg" alt="social Dog" />
+        <WorkImage
+          src="/images/projects/thumbSocialDogs.jpg"
+          alt="social Dog"
+        />
+        <WorkImage src="/images/projects/socialDogs_02.jpg" alt="social Dog" />
       </Container>
     </Layout>
   )
