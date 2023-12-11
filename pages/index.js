@@ -25,13 +25,16 @@ const Page = () => {
       <Container>
         <Box
           borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
           md={6}
+          p={3}
           align="center"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          css={{ backdropFilter: 'blur(10px)' }}
+          marginBottom={6}
         >
           Hellow, i&apos;m a front-end developer based in Brazil!
         </Box>
+
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
