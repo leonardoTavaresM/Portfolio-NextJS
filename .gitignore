@@ -1,0 +1,14 @@
+node_modules/
+.next/
+cert/
+*.log
+*.key
+*.pem
+*.crt
+.htpasswd
+.DS_Store
+*.Identifier
+/coverage
+.vercel
+.env*
+/src/utils/graphql
