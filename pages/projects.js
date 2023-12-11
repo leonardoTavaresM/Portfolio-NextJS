@@ -3,9 +3,9 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbSocialDogs from '../public/images/works/thumbSocialDogs.jpg'
-import thumbAptovc from '../public/images/works/thumbAptovc.jpg'
-import thumbAptoVcCheckout from '../public/images/works/thumbAptoVcCheckout.jpg'
+import thumbSocialDogs from '../public/images/works/thumbSocialDogs.JPG'
+import thumbAptovc from '../public/images/works/thumbAptovc.JPG'
+import thumbAptoVcCheckout from '../public/images/works/thumbAptoVcCheckout.JPG'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
